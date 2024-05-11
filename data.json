@@ -1,0 +1,469 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 15 Pro Max",
+            "slug": "iphone-15-pro-max",
+            "image": "public/img/iphone-15-pro-max-blue-1.webp",
+            "price": "30990000",
+            "discounted_price": "34990000",
+            "storage_options": [
+                {
+                    "storage": "256GB",
+                    "price": "30990000",
+                    "discounted_price": "34900000"
+                },
+                {
+                    "storage": "512GB",
+                    "price": "34900000",
+                    "discounted_price": "34900000"
+                },
+                {
+                    "storage": "1TB",
+                    "price": "37900000",
+                    "discounted_price": "39900000"
+                }
+            ],
+            "categories": "iPhone",
+            "comments" : [
+                {
+                    "id": 1,
+                    "user": {
+                        "id" : 1,
+                        "fullname" : "HungLQ"
+                    },
+                    "date":"2024-01-25 16:30:43",
+                    "content": "Sản phẩm rất tuyệt vời, mình rất hài lòng với sản phẩm này",
+                    "star" : 5
+                }
+
+            ]
+        },
+        {
+            "id": 2,
+            "name": "iPhone 15 Pro",
+            "slug": "iphone-15-pro",
+            "image": "public/img/iphone-15-pro-blue-1.webp",
+            "price": "26790000",
+            "discounted_price": "28790000",
+            "storage_options": [
+                {
+                    "storage": "128GB",
+                    "price": "28990000",
+                    "discounted_price": "30900000"
+                },
+                {
+                    "storage": "256GB",
+                    "price": "30900000",
+                    "discounted_price": "32900000"
+                },
+                {
+                    "storage": "512GB",
+                    "price": "33900000",
+                    "discounted_price": "35900000"
+                }
+            ],
+            "categories": "iPhone"
+        },
+        {
+            "id": 3,
+            "name": "iPhone 15 Plus",
+            "slug": "iphone-15-plus",
+            "image": "public/img/iphone-15-plus-green-1.webp",
+            "price": "23390000",
+            "discounted_price": "25890000",
+            "storage_options": [
+                {
+                    "storage": "128GB",
+                    "price": "25990000",
+                    "discounted_price": "28900000"
+                },
+                {
+                    "storage": "256GB",
+                    "price": "28900000",
+                    "discounted_price": "30900000"
+                },
+                {
+                    "storage": "512GB",
+                    "price": "31900000",
+                    "discounted_price": "33900000"
+                }
+            ],
+            "categories": "iPhone"
+        },
+        {
+            "id": 4,
+            "name": "iPhone 15",
+            "slug": "iphone-15",
+            "image": "public/img/iphone-15-green-1.webp",
+            "price": "20290000",
+            "discounted_price": "22590000",
+            "storage_options": [
+                {
+                    "storage": "128GB",
+                    "price": "20490000",
+                    "discounted_price": "22700000"
+                },
+                {
+                    "storage": "256GB",
+                    "price": "22700000",
+                    "discounted_price": "24700000"
+                },
+                {
+                    "storage": "512GB",
+                    "price": "24700000",
+                    "discounted_price": "26700000"
+                }
+            ],
+            "categories": "iPhone"
+        },
+        {
+            "id": 5,
+            "name": "iPhone 14 Pro Max",
+            "slug": "iphone-14-pro-max",
+            "image": "public/img/iphone-14-pro-max-purple.webp",
+            "price": "27390000",
+            "discounted_price": "29490000",
+            "storage_options": [
+                {
+                    "storage": "256GB",
+                    "price": "27390000",
+                    "discounted_price": "29490000"
+                },
+                {
+                    "storage": "512GB",
+                    "price": "29490000",
+                    "discounted_price": "31490000"
+                },
+                {
+                    "storage": "1TB",
+                    "price": "32490000",
+                    "discounted_price": "34490000"
+                }
+            ],
+            "categories": "iPhone"
+        },
+        {
+            "id": 6,
+            "name": "iPhone 14 Plus",
+            "slug": "iphone-14-plus",
+            "image": "public/img/iphone-14-plus-yellow.webp",
+            "price": "20990000",
+            "discounted_price": "22890000",
+            "storage_options": [
+                {
+                    "storage": "128GB",
+                    "price": "20990000",
+                    "discounted_price": "22990000"
+                },
+                {
+                    "storage": "256GB",
+                    "price": "22990000",
+                    "discounted_price": "24990000"
+                }
+            ],
+            "categories": "iPhone"
+        },
+        {
+            "id": 7,
+            "name": "iPhone 14",
+            "slug": "iphone-14",
+            "image": "public/img/iphone-14-purple.webp",
+            "price": "17690000",
+            "discounted_price": "20190000",
+            "storage_options": [
+                {
+                    "storage": "128GB",
+                    "price": "17590000",
+                    "discounted_price": "20900000"
+                },
+                {
+                    "storage": "256GB",
+                    "price": "20900000",
+                    "discounted_price": "23900000"
+                }
+            ],
+            "categories": "iPhone"
+        },
+        {
+            "id": 8,
+            "name": "iPhone 13",
+            "slug": "iphone-13",
+            "image": "public/img/iphone-13-green.webp",
+            "price": "14290000",
+            "categories": "iPhone",
+            "discounted_price": "17090000",
+            "storage_options": [
+                {
+                    "storage": "256GB",
+                    "price": "14990000",
+                    "discounted_price": "17890000"
+                },
+                {
+                    "storage": "512GB",
+                    "price": "17890000",
+                    "discounted_price": "20890000"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "iPhone 12",
+            "slug": "iphone-12",
+            "image": "public/img/iphone-12-white.webp",
+            "price": "12090000",
+            "categories": "iPhone",
+            "discounted_price": "14900000",
+            "storage_options": [
+                {
+                    "storage": "64GB",
+                    "price": "12090000",
+                    "discounted_price": "14890000"
+                },
+                {
+                    "storage": "128GB",
+                    "price": "14890000",
+                    "discounted_price": "16890000"
+                },
+                {
+                    "storage": "258GB",
+                    "price": "16890000",
+                    "discounted_price": "18890000"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "iPad 9 Wifi 64GB",
+            "slug": "ipad-9-wifi-64gb",
+            "image": "public/img/ipad-9-grey-thumb.webp",
+            "price": "7290000",
+            "categories": "iPad",
+            "discounted_price": "8900000"
+        },
+        {
+            "id": 11,
+            "name": "iPad 10 Wifi 64GB",
+            "slug": "ipad-10-wifi-64gb",
+            "image": "public/img/ipad-10-slider.webp",
+            "price": "11090000",
+            "categories": "iPad",
+            "discounted_price": "11440000"
+        },
+        {
+            "id": 12,
+            "name": "iPad Pro M2 11 Inch 64GB",
+            "slug": "ipad-pro-m2-11-inch-64gb",
+            "image": "public/img/ipad-pro-m2-11inch-sliver.webp",
+            "price": "20990000",
+            "categories": "iPad",
+            "discounted_price": "21880000"
+        },
+        {
+            "id": 13,
+            "name": "iPad Air 5 Wifi 64GB",
+            "slug": "ipad-air-5-wifi-64gb",
+            "image": "public/img/ipad-air-5-kem.webp",
+            "price": "14590000",
+            "categories": "iPad",
+            "discounted_price": "15980000"
+        },
+        {
+            "id": 14,
+            "name": "Macbook Air 13 Inch M1 2020",
+            "slug": "macbook-air-13-inch-m1-2020",
+            "image": "public/img/mac-air-m1-xam.webp",
+            "price": "17990000",
+            "categories": "Macbook",
+            "discounted_price": "19500000"
+        },
+        {
+            "id": 15,
+            "name": "Macbook Air 13 Inch M2 2022",
+            "slug": "macbook-air-13-inch-m2-2022",
+            "image": "public/img/mac-air-m2-vang.webp",
+            "price": "24990000",
+            "categories": "Macbook",
+            "discounted_price": "28900000"
+        },
+        {
+            "id": 16,
+            "name": "Macbook Pro 13 Inch M2 2022",
+            "slug": "macbook-pro-13-inch-m2-2022",
+            "image": "public/img/mac-pro-13-m2-bac.webp",
+            "price": "25990000",
+            "categories": "Macbook",
+            "discounted_price": "28900000"
+        },
+        {
+            "id": 17,
+            "name": "Macbook Pro 14 Inch M3 2023",
+            "slug": "macbook-pro-14-inch-m3-2023",
+            "image": "public/img/mac-topzone-spacegray.webp",
+            "price": "38590000",
+            "categories": "Macbook",
+            "discounted_price": "39900000"
+        },
+        {
+            "id": 18,
+            "name": "Apple Watch SE 2022 GPS 40mm Nhôm",
+            "slug": "apple-watch-se-2022-gps-40mm-nhom",
+            "image": "public/img/apple-watch-se-2022-gps-40mm-trang.webp",
+            "price": "5890000",
+            "categories": "AppleWatch",
+            "discounted_price": "7490000"
+        },
+        {
+            "id": 19,
+            "name": "Apple Watch Series 9 GPS 41mm Nhôm",
+            "slug": "apple-watch-series-9-gps-41mm-nhom",
+            "image": "public/img/apple-watch-s9-41mm-vien-nhom-day-silicone.webp",
+            "price": "9990000",
+            "categories": "AppleWatch",
+            "discounted_price": "10900000"
+        },
+        {
+            "id": 20,
+            "name": "Apple Watch Ultra 2 GPS + Cellular 49mm",
+            "slug": "apple-watch-ultra-2-gps-cellular-49mm",
+            "image": "public/img/apple-watch-ultra-lte-49mm-vien-titanium-day.webp",
+            "price": "20990000",
+            "categories": "AppleWatch",
+            "discounted_price": "21900000"
+        },
+        {
+            "id": 21,
+            "name": "Apple Watch SE 2023 GPS 40mm Nhôm",
+            "slug": "apple-watch-se-2023-gps-40mm-nhom",
+            "image": "public/img/apple-watch-se-2023-vien-nhom-day-silicone.webp",
+            "price": "5990000",
+            "categories": "AppleWatch",
+            "discounted_price": "6300000"
+        },
+        {
+            "id": 22,
+            "name": "AirPods 2 Hộp sạc thường",
+            "slug": "airpods-2-hop-sac-thuong",
+            "image": "public/img/tai-nghe-bluetooth-airpods-2.webp",
+            "price": "2790000",
+            "categories": "AirPods",
+            "discounted_price": "3490000"
+        },
+        {
+            "id": 23,
+            "name": "AirPods Pro (2nd Gen)",
+            "slug": "airpods-pro-2nd-gen",
+            "image": "public/img/tai-nghe-bluetooth-airpods-pro-gen-2.webp",
+            "price": "5990000",
+            "categories": "AirPods",
+            "discounted_price": "6100000"
+        },
+        {
+            "id": 24,
+            "name": "AirPods 3 sạc Lightning",
+            "slug": "airpods-3-sac-lightning",
+            "image": "public/img/airpods-3.webp",
+            "price": "4090000",
+            "categories": "AirPods",
+            "discounted_price": "4490000"
+        },
+        {
+            "id": 25,
+            "name": "AirPods Pro (2nd Gen) USB-C",
+            "slug": "airpods-pro-2nd-gen-usb-c",
+            "image": "public/img/airpods-pro-2.webp",
+            "price": "5790000",
+            "categories": "AirPods",
+            "discounted_price": "6290000"
+        },
+        {
+            "id": 26,
+            "name": "Adapter sạc Apple USB-C 20W",
+            "slug": "adapter-sac-apple-usb-c-20w",
+            "image": "public/img/adapter-sac-type-c-20w.webp",
+            "price": "550000",
+            "categories": "Accessories"
+        },
+        {
+            "id": 27,
+            "name": "Ốp lưng MagSafe cho iPhone 15 Pro Max",
+            "slug": "op-lung-magsafe-cho-iphone-15-pro-max",
+            "image": "public/img/op-lung-magsafe-iphone-15-pro-max.webp",
+            "price": "1190000",
+            "categories": "Accessories",
+            "discounted_price": "1400000"
+        },
+        {
+            "id": 28,
+            "name": "Ốp lưng Magsafe cho iPhone 15 Pro Max Vải tinh dệt Apple",
+            "slug": "op-lung-magsafe-cho-iphone-15-pro-max-vai",
+            "image": "public/img/op-lung-magsafe-iphone-15-pro-max-vai.webp",
+            "price": "1300000",
+            "categories": "Accessories",
+            "discounted_price": "1690000"
+        },
+        {
+            "id": 29,
+            "name": "Magic Keyboard",
+            "slug": "magic-keyboard",
+            "image": "public/img/magic-keyboard.webp",
+            "price": "2070000",
+            "categories": "Accessories",
+            "discounted_price": "3190000"
+        }
+    ],
+    "users": [
+        {
+          "username": "1",
+          "password": "1"
+        },
+        {
+          "username": "alice_smith",
+          "password": "as_password"
+        },
+        {
+          "username": "bob_johnson",
+          "password": "bj_password"
+        },
+        {
+          "username": "emily_brown",
+          "password": "eb_password"
+        },
+        {
+          "username": "michael_wilson",
+          "password": "mw_password"
+        }
+    ],
+    "discount": [
+        {
+            "id": "1",
+            "code": "freeship",
+            "amount": 100000,
+            "date": "2024-04-23"
+          },
+          {
+            "id": "2",
+            "code": "SAVE20",
+            "amount": 20000,
+            "date": "2024-04-11"
+          },
+          {
+            "id": "3",
+            "code": "SPRINGSALE",
+            "amount": 15,
+            "date": "2024-04-01"
+          },
+          {
+            "id": "4",
+            "code": "HALFOFF",
+            "amount": 50,
+            "date": "2024-04-05"
+          },
+          {
+            "id": "5",
+            "code": "FREESHIPPING",
+            "amount": 5,
+            "date": "2024-04-10"
+          }
+    ]
+}

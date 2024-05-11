@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopZone</title>
+    <link rel="shortcut icon" href="public/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+</head>
+
+<body ng-app="tzapp" ng-controller ="tzCtrl">
+    <div ng-show="isLoading" class="position-fixed top-0 bottom-0 start-0 end-0 z-5 text-bg-dark d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-spinner fa-spin fa-xl me-2"></i> Đang tải 
+    </div>
+    <!-- Navbar -->
+    <div ng-include = "'app/Views/menu.html'"></div>
+    <!-- Auto SlideShow -->
+    <div ng-include = "'app/Views/banner-index.html'"></div>
+    <!-- Body -->
+    <div ng-view></div>
+    <!-- Footer -->
+    <div ng-include = "'app/Views/footer.html'"></div>
+
+</body>
+<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="public/js/angular.min.js"></script>
+<script src="public/js/angular-route.js"></script>
+<script src="public/js/angular-sanitize.js"></script>
+<script src="https://kit.fontawesome.com/263e4bfa4a.js" crossorigin="anonymous"></script>
+<script src="public/js/app.js"></script>
+<script src="app/Controllers/tzCtrl.js"></script>
+<script src="app/Controllers/categoryCtrl.js"></script>
+<script src="app/Controllers/detailCtrl.js"></script>
+<script src="app/Controllers/homeCtrl.js"></script>
+<script src="app/Controllers/cartCtrl.js"></script>
+<script src="app/Controllers/newsCtrl.js"></script>
+<script src="app/Controllers/userCtrl.js"></script>
+<script src="app/Controllers/adminCtrl.js"></script>
+<script src="public/js/script.js"></script>
+</html>

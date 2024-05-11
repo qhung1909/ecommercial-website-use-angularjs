@@ -1,0 +1,70 @@
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 p-0 bg-primary collapse collapse-horizontal show" style="min-height:100vh"
+                id="openmenu">
+                <strong class="text-center d-block p-3 text-white">Trang quản lí</strong>
+                <div class="list-group list-group-item-success m-3">
+                    <a href="#!admin" class="list-group-item list-group-item-action  active" aria-current="true">
+                        Sản Phẩm
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action">Tài khoản</a>
+                    <a href="#" class="list-group-item list-group-item-action">Chủ đề</a>
+                    <a href="#" class="list-group-item list-group-item-action">Đơn hàng</a>
+                </div>
+            </div>
+            <div class="col-md p-0">
+                <div class="container">
+                    <h2 class="my-3">Sản phẩm</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card border-primary mb-3">
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Sản phẩm</h5>
+                                    <p class="card-text fs-1 text-center">{{ productCount }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-success mb-3">
+                                <div class="card-body text-success">
+                                    <h5 class="card-title">Danh mục</h5>
+                                    <p class="card-text fs-1 text-center">{{ categoryCount  }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="border-top: 1px solid rgb(0, 0, 0)">
+                </div>
+                <div class="container">
+                    <a href="" style="text-decoration: none;"><button class="btn btn-md btn-success">Thêm sản phẩm</button></a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 100px;">Ảnh SP</th>
+                                <th>Sản Phẩm</th>
+                                <th>Gía bán</th>
+                                <th>Gía khuyến mãi</th>
+                                <th>Danh mục</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr ng-repeat="product in dsSP">
+                                <td>{{$index + 1}}</td>
+                                <td><img ng-src="{{product.image}}" alt="{{product.name}}" style="max-width: 100px;"></td>
+                                <td>{{product.name}}</td>
+                                <td>{{formatPrice(product.price)}}</td>
+                                <td>{{formatPrice(product.discounted_price)}}</td>
+                                <td><span class="badge text-bg-success">{{product.categories}}</span> </td>
+                                <td><button class="btn btn-sm btn-outline-warning">Sửa</button>
+                                    <button class="btn btn-sm btn-outline-danger">Xóa</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

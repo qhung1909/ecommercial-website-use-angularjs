@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5 me-auto" href="#!"><img src="public/img/icon-topzone.png" width="110px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/category/iPhone">iPhone</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/category/iPad">iPad</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/category/Macbook">Macbook</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/category/AppleWatch">Watch</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/category/Speaker">Tai nghe, Loa</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/category/Accessories">Phụ kiện</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#!/news">TekZone</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex">
+            <a href="#!cart" class="mx-2">
+                <button type="button" class="btn btn-outline-light position-relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        {{ getCartItemCount() }}
+                    </span>
+                </button>
+            </a>
+            <a href="#!/login" class="btn btn-outline-light mx-2"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="#!/admin" class="btn btn-outline-light mx-2"><i class="fa-solid fa-unlock-keyhole"></i></a>
+</nav>

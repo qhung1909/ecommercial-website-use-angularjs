@@ -1,0 +1,307 @@
+<div class="p-3" style="background-color: #3E3E3F;">
+
+    <div class="container" >
+        <div class="row text-white">
+            <div class="col-md-6">
+                <img src="{{product.image}}" width="80%">
+
+                <div class="card w-75 flex-sm-row flex-md-row border-danger my-5 align-items-center d-flex">
+                    <div class="card-body d-flex flex-column ">
+                        <h1 class="modal-title fs-5 text-break text-danger text-center" id="staticBackdropLabel ">
+                            Thông
+                            số kỹ thuật
+                        </h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Kích thước màn hình: 6.7 inches</li>
+                            <li class="list-group-item">Công nghệ màn hình: Super Retina XDR OLED</li>
+                            <li class="list-group-item">Camera sau:
+                                <ul>
+                                    <li>Camera chính: 48MP, 24 mm, ƒ/1.78</li>
+                                    <li>Camera góc siêu rộng: 12 MP, 13 mm, ƒ/2.2</li>
+                                    <li>Camera Tele 5x: 12 MP, 120 mm, ƒ/2.8</li>
+                                    <li>Camera Tele 2x: 12 MP, 48 mm, ƒ/1.78</li>
+                                    <li>. . .</li>
+
+                                </ul>
+                            </li>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Xem thêm
+                            </button>
+
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông số
+                                                kỹ thuật</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">Pin: 4422 mAh</li>
+                                                        <li class="list-group-item">Thẻ SIM: 2 SIM (nano‑SIM
+                                                            và eSIM)</li>
+                                                        <li class="list-group-item">Hệ điều hành: iOS 17
+                                                        </li>
+                                                        <li class="list-group-item">Độ phân giải màn hình:
+                                                            2796 x 1290-pixel</li>
+                                                        <li class="list-group-item">Tính năng màn hình:
+                                                            <ul>
+                                                                <li>Tốc độ làm mới 120Hz</li>
+                                                                <li>460 ppi</li>
+                                                                <li>HDR</li>
+                                                                <li>True Tone</li>
+                                                                <li>Dải màu rộng (P3)</li>
+                                                                <li>Haptic Touch</li>
+                                                                <li>Tỷ lệ tương phản 2.000.000:1</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Đóng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-white"><strong>{{product.name}}</strong></h2>
+                <p>Gía và khuyến mãi tại: Hồ Chí Minh</p>
+                <div class="text-white">
+                    <h3 class="d-inline">Giá: {{formatPrice(product.price)}} </h3><del class="d-inline">{{formatPrice(product.discounted_price)}}</del>
+                    <span class="badge text-bg-warning d-inline">{{calculateDiscountPercentage(product.price, product.discounted_price) }}%</span>
+                </div>
+                <p class="my-3">Dung lượng</p>
+                <div class="row my-3">
+                    <div class="col-10 d-inline-flex">
+                        <button class="btn btn-dark text-white me-2" ng-repeat="option in product.storage_options">{{option.storage}}</button>
+                    </div>
+                </div>                
+                
+                <p class="my-2">Màu</p>
+                <div class="row my-2">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="rounded-circle"
+                                    style="width: 40px; height: 40px; background-color: #4F5765;"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="rounded-circle"
+                                    style="width: 40px; height: 40px; background-color: #BAB4A9;"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="rounded-circle"
+                                    style="width: 40px; height: 40px; background-color: #F2F1EC;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-bg-dark ">
+                    <div class="card-header text-white align-items-center ">
+                        <h5>Khuyến mãi
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Chỉ còn 2 ngày!
+                            </span>
+                        </h5>
+                        <p>Giá và khuyến mãi dự kiến áp dụng đến <span class="badge text-bg-info">23:00 |
+                                31/03</span> </p>
+                    </div>
+                    <div class="card-body">
+                        <ul style="list-style-type:disc">
+
+                            <li>Thu cũ Đổi mới: Giảm đến <span class="badge text-bg-success">2 triệu</span> (Tuỳ
+                                model máy cũ, Không kèm thanh toán qua cổng online, mua kèm) <a href=""
+                                    style="text-decoration: none;" data-bs-toggle="tooltip"
+                                    data-bs-title="Cách thức thu cũ & đổi mới cho quý khách" id="tooltips1">Xem chi
+                                    tiết</a></li>
+                            <li>Hoàn tiền nếu ở đâu rẻ hơn (Trong vòng 7 ngày; chỉ áp dụng tại siêu thị) <a href=""
+                                    style="text-decoration: none;" data-bs-toggle="tooltip"
+                                    data-bs-title="Cách thức hoàn tiền" id="tooltips2">Xem chi tiết</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary text-center text-white my-3 w-100" style="height: 8%;" ng-click="mua(product)">
+                    <h4>Mua ngay</h4>
+                </button>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn btn-light w-100 text-black" style="height: 80%;"> <strong>Mua trả góp
+                                0%</strong>
+                            <p>Qua công ty tài chính</p>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-light w-100 text-black" style="height: 80%;"> <strong>Trả góp 0% qua
+                                thẻ</strong>
+                            <p>Visa, Mastercard, JCB, Amex</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-4">
+
+                    <p><i class="fa-solid fa-box fa-xl"></i> : Bộ sản phẩm gồm: Hộp, Sách hướng dẫn, Cây lấy sim,
+                        Cáp Type C</p>
+                    <p><i class="fa-solid fa-arrow-right-arrow-left fa-xl"></i> : Hư gì đổi nấy 12 tháng tại 3261
+                        siêu thị trên toàn quốc <a href="" style="text-decoration: none;"> Xem chi tiết chính sách
+                            bảo hành, đổi trả</a></p>
+                    <p><i class="fa-solid fa-shield-halved fa-xl"></i>: Bảo hành chính hãng 1 năm</p>
+                    <p><i class="fa-solid fa-circle-info fa-xl"></i> : Giao hàng nhanh toàn quốc <a href=""
+                            style="text-decoration: none;"> Xem chi tiết</a></p>
+                    <p><i class="fa-solid fa-phone fa-xl"></i> : Tổng đài: <a href="" style="text-decoration: none;">
+                            1900.9696.42</a> (7:30 - 22:30) </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div style="background-color: white;">
+    <div class="container">
+        <div class="text-black my-5 d-flex align-items-center">
+            <h2 class="mb-0">Phụ kiện nên có cho {{product.name}}</h2>
+            <a href="#" class="ms-2" data-bs-toggle="tooltip"
+                data-bs-title="Điện thoại này trong hộp chưa có một số phụ kiện. Để trải nghiệm máy tốt hơn, bạn có thể cân nhắc mua thêm một số phụ kiện gợi ý bên dưới"><i
+                    class="fa-solid fa-question"></i></a>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-4 col-md-3 col-sm-6 my-3">
+                <div class="card text-bg-white">
+                    <div class="card-header">
+                        <img src="public/img/adapter-sac-type-c-20w.webp" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Adapter sạc Apple USB-C 20W</p>
+                        <h5 class="text-center">550.000đ</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-3 col-sm-6 my-3">
+                <div class="card text-bg-white">
+                    <div class="card-header">
+                        <img src="public/img/tai-nghe-bluetooth-airpods-pro-gen-2.webp" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">AirPods Pro (2nd Gen) USB-C</p>
+                        <h5 class="text-center">5.690.000đ <del class="text-sm-center">6.200.000đ</del></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-3 col-sm-6 my-3">
+                <div class="card text-bg-white">
+                    <div class="card-header">
+                        <img src="public/img/mieng-dan-kinh-cuong-luc-iphone-15-pro-max.webp" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Miếng dán kính cường lực iPhone 15 Pro Max JCPAL</p>
+                        <h5 class="text-center">400.000đ</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-3 col-sm-6 my-3">
+                <div class="card text-bg-white">
+                    <div class="card-header">
+                        <img src="public/img/op-lung-magsafe-iphone-15-pro-max.webp" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Ốp lưng MagSafe cho iPhone 15 Pro Max Nhựa trong Apple</p>
+                        <h5 class="text-center">1.100.000đ <del class="text-sm-center">1.430.000đ</del></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid rgb(48, 47, 47)">
+    </div>
+
+    <div class="container">
+        <div class="text-black my-3 d-flex align-items-center">
+            <h2 class="mb-0">Đánh giá {{product.name}}</h2>
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-md-10" ng-repeat = "binhluan in product.comments">
+                <div class="card w-50 border-dark">
+                    <div class="card-header">            
+                       
+                        <hr style="border-top: 1px solid rgb(48, 47, 47)">
+                        <div class="text mt-3">
+                            <p> <strong>{{binhluan.user.fullname}}</strong></p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div ng-bind-html = "renderStar(binhluan.star)"> </div>
+                                </div>
+                            </div>
+                            <p>{{binhluan.content}}</p>
+                            <small>{{binhluan.date}}</small>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex align-items-center">
+                        <div class="row ">
+                            <div class="col-auto">
+                                <button class="btn btn-outline-dark btn-block">Xem 4 đánh giá</button>
+                            </div>
+                            <div class="col-auto">
+                                <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-success btn-block">Viết đánh giá</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Viết đánh giá</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="rating text-warning h1 text-center">
+            <i class="fa-{{(saoDangChon >= 1 || saoDuocChon >= 1)?'solid':'regular'}} fa-star" ng-mouseover="saoDangChon = 1" ng-mouseout = "saoDangChon = 0" ng-click = "saoDuocChon  = 1"></i>
+            <i class="fa-{{(saoDangChon >= 2 || saoDuocChon >= 2)?'solid':'regular'}} fa-star" ng-mouseover ="saoDangChon = 2" ng-mouseout = "saoDangChon = 0" ng-click = "saoDuocChon  =  2" ></i>
+            <i class="fa-{{(saoDangChon >= 3 || saoDuocChon >= 3)?'solid':'regular'}} fa-star" ng-mouseover ="saoDangChon = 3" ng-mouseout = "saoDangChon = 0" ng-click = "saoDuocChon  =  3"></i>
+            <i class="fa-{{(saoDangChon >= 4 || saoDuocChon >= 4)?'solid':'regular'}} fa-star" ng-mouseover ="saoDangChon = 4" ng-mouseout = "saoDangChon = 0" ng-click = "saoDuocChon  =  4"></i>
+            <i class="fa-{{(saoDangChon >= 5 || saoDuocChon >= 5)?'solid':'regular'}} fa-star" ng-mouseover ="saoDangChon = 5" ng-mouseout = "saoDangChon = 0" ng-click = "saoDuocChon  =  5"></i>
+          </div>
+          <textarea class="form-control" cols="30" rows="5" placeholder="Viết đánh giá của bạn" ng-model = 'noiDungDanhGia'></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id = "close-modal">Đóng</button>
+          <button type="button" class="btn btn-dark" ng-click = "luuDanhGia()">Gửi đánh giá</button>
+        </div>
+      </div>
+    </div>
+  </div>
